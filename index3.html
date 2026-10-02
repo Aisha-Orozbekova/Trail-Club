@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trail Club - Trip Application</title>
+</head>
+<body>
+
+    <h1>Trail Club</h1>
+
+    <p>Student hiking club · Classroom example</p>
+
+    <nav>
+        <a href="index.html">Home</a> ·
+        <a href="routes.html">Routes</a> ·
+        <a href="application.html">Apply for a trip</a>
+    </nav>
+
+    <hr>
+
+    <p>
+        <a href="index.html">Home</a> →
+        <a href="routes.html">Routes</a> →
+        Application
+    </p>
+
+    <h2>Trip Application</h2>
+
+    <p>
+        This is a practice form. It does not send or store information.
+    </p>
+
+    <form>
+
+        <fieldset>
+            <legend>1. Participant</legend>
+
+            <p>
+                <label for="name">Full name *</label><br>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email *</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="group">Student group</label><br>
+                <input type="text" id="group" name="group">
+            </p>
+
+        </fieldset>
+
+        <br>
+            <fieldset>
+       
+            <legend>2. Trip choice</legend>
+
+            <p>
+                <label for="route">Route *</label><br>
+
+                <select id="route" name="route" required>
+                    <option value="">Choose a route</option>
+                    <option value="river">River Walk</option>
+                    <option value="forest">Forest Trail</option>
+                    <option value="ridge">Ridge View</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="date">Preferred date *</label><br>
+                <input type="date" id="date" name="date" required>
+            </p>
+
+            <p>
+                <label for="participants">
+                    Number of participants (1–4)
+                </label><br>
+
+                <input
+                    type="number"
+                    id="participants"
+                    name="participants"
+                    min="1"
+                    max="4"
+                    value="1"
+                >
+            </p>
+
+           </fieldset>
+
+        <br>
+           <fieldset>
+       
+            <legend>3. Experience</legend>
+
+            <p>Have you gone hiking before?</p>
+
+            <input type="radio" id="yes" name="experience" value="yes">
+            <label for="yes">Yes</label>
+
+            <br>
+
+            <input type="radio" id="no" name="experience" value="no">
+            <label for="no">No</label>
+
+        
+            </fieldset>
+        <br>
+
+            <fieldset>
+            <legend>4. Additional information</legend>
+
+            <p>
+                <label for="message">Comments</label><br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="40"
+                ></textarea>
+            </p>
+
+            </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit application">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
